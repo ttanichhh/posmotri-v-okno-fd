@@ -104,7 +104,6 @@ ol {
   width: 100%;
   height: 298px;
   overflow: scroll;
-  overflow-x: hidden;
   overflow-y: auto;
   padding: 3px 0;
 }
@@ -163,8 +162,8 @@ ol {
   line-height: 16.2px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   overflow: hidden;
 }
 
@@ -196,7 +195,7 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  height: 34px;
+  min-height: 34px;
 }
 
 .button:hover {
@@ -303,10 +302,6 @@ ol {
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .search-form__textfield:focus {
